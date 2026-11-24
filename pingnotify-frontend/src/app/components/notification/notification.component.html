@@ -1,0 +1,38 @@
+<div class="container">
+
+    <div class="header">
+        <h1>PingNotify</h1>
+        <p>Meta WhatsApp Cloud API Integration</p>
+    </div>
+
+    <div class="notification-card">
+
+        <h2>Send WhatsApp Notification</h2>
+        <p>Send a notification directly to a WhatsApp number.</p>
+
+        <form (ngSubmit)="sendNotification()">
+
+            <label>Recipient Mobile Number</label>
+            <input type="text" name="phoneNumber" [(ngModel)]="phoneNumber"
+                placeholder="Enter mobile number with country code" required />
+
+            <label>Notification Message</label>
+            <textarea name="message" [(ngModel)]="message" placeholder="Enter your notification message" rows="5"
+                required></textarea>
+
+            <button type="submit">
+                Send WhatsApp Notification
+            </button>
+
+        </form><br>
+
+        <div class="response-card">
+            <h3>API Response</h3>
+            <p>{{ responseMessage || 'Waiting for notification...' }}</p>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p style="text-align: center;">Developed by Sandipan</p>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+.container {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #168c52;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #666;
+}
+
+.notification-card,
+.response-card {
+  background: white;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.notification-card h2 {
+  margin-top: 0;
+}
+
+.notification-card p {
+  color: #666;
+}
+
+label {
+  display: block;
+  margin: 18px 0 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 13px;
+  background: #168c52;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #116e40;
+}
+
+.response-card h3 {
+  margin-top: 0;
+}
